@@ -5,8 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tic_Tac_Launcher"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Tic Tac Launcher" Height="504" Width="896" 
+        ResizeMode="NoResize"
+        Background="Black">
+    
     <Grid>
-
+        <Grid.Background>  
+            <ImageBrush ImageSource="background.png"/>    
+        </Grid.Background>
+        <Label Foreground="White" FontSize="40">Tic Tac Launcher</Label>
+        
+        <StackPanel HorizontalAlignment="Left" Margin="30,40" Width="700" Height="10" VerticalAlignment="Bottom">
+            <ProgressBar Width="700" Height="10" HorizontalAlignment="Left"  Name="Bar">
+            </ProgressBar>
+        </StackPanel>
+        <TextBlock Width="240" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="20" Name="PatchNote" Foreground="White" FontSize="20" Background="#70260052" TextWrapping="Wrap">TEST</TextBlock>
+       
+        <Button Width="120" Height="50" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="30,25" BorderThickness="0" Click="UpdateInstallOnClick" Name="ButtonXAs" >
+            <Button.Background>
+                <ImageBrush ImageSource="Button.png"/>   
+            </Button.Background>
+            <Label FontSize="20" Name="ButtonText">Update</Label>
+        </Button>
     </Grid>
 </Window>

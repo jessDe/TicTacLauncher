@@ -6,6 +6,24 @@
         <RootNamespace>Tic_Tac_Launcher</RootNamespace>
         <Nullable>enable</Nullable>
         <UseWPF>true</UseWPF>
+        <PackageIcon>bean.ico</PackageIcon>
+        <ApplicationIcon>bean.ico</ApplicationIcon>
+        <SignAssembly>true</SignAssembly>
+        <AssemblyOriginatorKeyFile>TicTac.snk</AssemblyOriginatorKeyFile>
+        <Authors>LP4</Authors>
     </PropertyGroup>
+
+    <ItemGroup>
+      <None Remove="background.png" />
+      <Resource Include="background.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Resource>
+      <None Remove="Button.png" />
+      <Resource Include="Button.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FolderBrowserEx" Version="1.0.1" />
+    </ItemGroup>
 
 </Project>
